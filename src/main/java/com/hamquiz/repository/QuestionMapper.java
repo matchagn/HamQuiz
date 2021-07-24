@@ -9,36 +9,36 @@ import com.hamquiz.entity.Question;
 @Mapper
 public interface QuestionMapper {
 
-    // カウント用メソッド
-    public int count();
+	// カウント用メソッド
+	public int count();
 
-    // １件検索用メソッド
-    public Question selectOne(int id);
+	// １件検索用メソッド
+	public Question selectOne(int id);
 
-    // 全件検索用メソッド
-    public List<Question> selectMany();
+	// 全件検索用メソッド
+	public List<Question> selectMany();
 
-    // 問題数カウント用メソッド
-    public int countQuiz();
+	// 問題数カウント用メソッド
+	public int countQuiz();
 
-    // 登録用メソッド
-    public int insertQuiz(List<Integer> id);
+	// 登録用メソッド
+	public int insertQuiz(List<Integer> id);
 
-    // 初期化用メソッド
-    public int deleteQuiz();
+	// 初期化用メソッド
+	public int deleteQuiz();
 
-    //　出題数取得メソッド
-    public int countMyquiz();
+	// 出題数取得メソッド
+	public int countMyquiz();
 
-    // 出題ID取得メソッド
-    public List<Integer> idQuiz();
+	// 出題ID取得メソッド
+	public List<Integer> idQuiz();
 
-    //　正解・不正解結果メソッド
-    public int reviewQuiz(int id);
+	// 正解・不正解結果メソッド
+	public int reviewQuiz(int id);
 
-    //　解答済結果メソッド
-    public int answeredQuiz(int id);
+	// 解答済結果メソッド
+	public int answeredQuiz(int id);
 
-    //　正解数取得メソッド
-    public int  countReview();
+	// 正解数取得メソッド
+	public int countReview();
 }
